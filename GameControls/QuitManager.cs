@@ -9,11 +9,13 @@ public class QuitManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
+            ExitGame();
         }
     }
 
     public void ExitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 }
